@@ -9,7 +9,6 @@
                 margin: 0;
                 padding: 0;
                 text-decoration: none;
-               
             }
             .logo{
                 padding-left:10px;
@@ -22,8 +21,7 @@
                 z-index: 100;
                 position:fixed;
                 top: 1px;
-                 display: flex;
-                flex-wrap: wrap;
+               
                 
             }
             .nam{
@@ -55,9 +53,7 @@
                 font-size: 20px;
             }
             .top{
-                 flex-grow: 1;
-                flex-basis: 200;
-               
+                
                 background-color: #798d8e;
                 left: 0;
               
@@ -85,7 +81,7 @@
                 text-decoration: none;
                 position: absolute;
                 font-size: 20px;
-                left: 370px;
+                left: 350px;
                 top: 7px;
             }
             .cl{
@@ -263,7 +259,7 @@
                 font-size: 25px;
                 position: absolute;
                 top: 7px;
-                               left: 120px; 
+                               left: 20px; 
                 font-weight: bold;
                 text-emphasis-color: rgb(255, 255, 255);
                  border:2PX solid;
@@ -423,13 +419,6 @@
             .note p{
                 display: block;
             }
-            img{
-               transition: opacity 0.2s ease-in-out;
-                object-fit: cover;
-            }
-            img:hover{
-                opacity: 0.8;
-            }
             
 *{
     margin: 0;
@@ -509,7 +498,7 @@
     padding: 2px 5px;
     box-shadow: 0 2px 4px rgba(0 0 0 / 10%);
     position: absolute;
-    right: 22px;
+    left: 60px;
 }
 
 #menu-icon{
@@ -541,17 +530,47 @@
         left: 0;
     } 
 }
-
-            @media screen and(max-width: 768px){
-                .title{
-                    width: 45%;
+            @media(max-width: 768px){
+                .head{
+                width: 100%;
+                }
+                .top{
+                    width: 100%;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .electronics,.kitchen,.cloths,.medical,.IFAK,.ict,.agriculture,.live{
+                    width: 100%;
+                }
+                .item1,.item2,.item3{
+                    width: 90%;
+                    margin: 0 auto;
+                }
+                .item1 img,.item2 img,.item3 img{
+                    width: 100%;
                 }
             }
             
-             @media screen and(max-width: 480px){
-                .title{
-                    width: 100%;
+            @media(max-width: 480px){
+                .head{
+                width: 10%;
                 }
+                .top{
+                    width: 10%;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .electronics,.kitchen,.cloths,.medical,.IFAK,.ict,.agriculture,.live{
+                    width: 10%;
+                }
+                .item1,.item2,.item3{
+                    width: 90%;
+                    margin: 0 auto;
+                }
+                .item1 img,.item2 img,.item3 img{
+                    width: 10%;
+                }
+            }
             }
 
         </style>
